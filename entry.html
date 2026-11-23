@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The Dispatch</title>
+<style>
+  :root{
+    --paper:#f5f1e7; --ink:#17150f; --muted:#6c6555;
+    --rule:#d2cbb8; --accent:#9c1c22;
+    --serif: Georgia, 'Times New Roman', 'Songti SC', serif;
+    --sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html,body{width:1024px;height:1024px;overflow:hidden;}
+  body{background:var(--paper); color:var(--ink); font-family:var(--serif); -webkit-font-smoothing:antialiased;}
+  .page{width:1024px;height:1024px;padding:34px 42px 26px;display:flex;flex-direction:column;}
+
+  .mast{display:flex;justify-content:space-between;align-items:flex-end;
+        border-bottom:3px double var(--ink); padding-bottom:9px;}
+  .wordmark{font-weight:700;font-size:62px;line-height:0.86;letter-spacing:-1px;}
+  .dateline{text-align:right;font-family:var(--sans);font-size:11px;line-height:1.6;color:var(--muted);}
+  .dateline b{display:block;color:var(--ink);font-size:13.5px;letter-spacing:.01em;margin-bottom:2px;}
+
+  .lead{padding:15px 0 13px;border-bottom:1px solid var(--ink);}
+  .kicker{font-family:var(--sans);font-size:11px;font-weight:700;letter-spacing:.17em;text-transform:uppercase;color:var(--accent);}
+  h1.lead-h{font-weight:700;font-size:52px;line-height:1.01;letter-spacing:-0.7px;margin:7px 0 9px;}
+  .dek{font-style:italic;font-size:19px;line-height:1.38;color:#3c372a;max-width:912px;}
+  .lead-body{columns:3;column-gap:26px;column-rule:1px solid var(--rule);margin-top:13px;
+             font-size:12.5px;line-height:1.5;color:#26241c;text-align:justify;
+             hyphens:auto;-webkit-hyphens:auto;}
+  .lead-body p{margin-bottom:8px;}
+
+  .sec{display:grid;grid-template-columns:1fr 1fr 1fr;flex:1;padding:13px 0;
+       border-bottom:1px solid var(--ink);align-content:start;}
+  .story{padding:0 20px;border-left:1px solid var(--rule);}
+  .story:first-child{border-left:0;padding-left:0;}
+  .story:last-child{padding-right:0;}
+  .story .kicker{color:var(--muted);}
+  h2{font-weight:700;font-size:24px;line-height:1.07;letter-spacing:-0.3px;margin:7px 0 8px;}
+  .story p{font-size:12.5px;line-height:1.52;color:#333026;text-align:justify;
+           hyphens:auto;-webkit-hyphens:auto;}
+
+  .briefs{padding-top:12px;}
+  .briefs .lbl{font-family:var(--sans);font-size:10.5px;font-weight:700;letter-spacing:.24em;
+               text-transform:uppercase;color:var(--accent);border-bottom:1px solid var(--ink);
+               padding-bottom:5px;margin-bottom:9px;}
+  .brieflist{columns:3;column-gap:26px;column-rule:1px solid var(--rule);
+             font-family:var(--sans);font-size:11.5px;line-height:1.5;color:#33302a;}
+  .brieflist .b{margin-bottom:8px;break-inside:avoid;}
+  .brieflist .b b{font-weight:700;color:var(--ink);}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="mast">
+    <div class="wordmark">The Dispatch</div>
+    <div class="dateline"><b>Sunday, 22 November 2026</b>Late edition &middot; around the world</div>
+  </div>
+
+  <div class="lead">
+    <div class="kicker">Climate &middot; Lead</div>
+    <h1 class="lead-h">COP31 talks collapse as the EU walks away from the closing deal</h1>
+    <p class="dek">Two weeks of negotiations ended without agreement after the European Union refused the final text, leaving the summit with no deal and the next round of national climate targets in doubt.</p>
+    <div class="lead-body">
+      <p>The summit was meant to lock in the next round of emissions pledges. Instead it closed on Sunday with no text that both blocs would sign, after the EU objected to the weakened wording on fossil fuels.</p>
+      <p>Delegations from more than 190 countries had worked for a fortnight to bridge the gap. Several said in the closing hours that they had come closer than expected, only to watch the deal fall apart at the last.</p>
+      <p>Attention now turns to whether the missed deadline delays the pledges due to be filed next year, and to how far the failed summit sets back the wider effort.</p>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="story">
+      <div class="kicker">Ukraine</div>
+      <h2>Russian strike on Kyiv kills at least fifteen</h2>
+      <p>A drone hit a residential block in the capital, the deadliest attack on the city in weeks. Rescue teams worked through the night as officials warned the toll could still rise. The strike came as the war headed into another winter. The attack drew fresh calls from allies for more air-defence support.</p>
+    </div>
+    <div class="story">
+      <div class="kicker">United States</div>
+      <h2>Democrats take the House with a sweeping majority</h2>
+      <p>The result, their strongest in decades, is a heavy blow to President Trump and reshapes the final two years of his term. The party's gains ran through the suburbs and several swing states. Control of the chamber now sets the terms of the budget fight to come.</p>
+    </div>
+    <div class="story">
+      <div class="kicker">Space</div>
+      <h2>BepiColombo slips into orbit around Mercury</h2>
+      <p>The European and Japanese probe reached its target after a six-year journey, beginning the closest study yet of the Sun's innermost planet. The craft will spend its first weeks easing into a stable orbit. Its instruments are built to map the surface and the thin, shifting tail it trails.</p>
+    </div>
+  </div>
+
+  <div class="briefs">
+    <div class="lbl">In Brief</div>
+    <div class="brieflist">
+      <div class="b"><b>Mongolia.</b> The president resigns amid protests over a mining deal.</div>
+      <div class="b"><b>Sport.</b> M&aacute;rquez seals an eighth grand-prix world title.</div>
+      <div class="b"><b>West Bank.</b> Settler attacks on villages draw condemnation abroad.</div>
+      <div class="b"><b>T&uuml;rkiye.</b> Another night of protests as the government faces a deepening crisis.</div>
+      <div class="b"><b>DR Congo.</b> Clashes are hampering the Ebola response, the WHO says.</div>
+      <div class="b"><b>Spain.</b> Voters head to the polls in a snap general election.</div>
+      <div class="b"><b>The Gulf.</b> A tanker incident in the Strait of Hormuz raises tensions.</div>
+      <div class="b"><b>Defence.</b> German drones interrupt drills in Lithuania.</div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
